@@ -1,0 +1,10 @@
+<?php
+    session_start();
+    if(!empty($_SESSION['admin']))
+    {
+        $_SESSION['admin']='';
+         $_SESSION['name_user']='';
+        session_destroy();
+    }
+    header("Location:../index.php");
+?>

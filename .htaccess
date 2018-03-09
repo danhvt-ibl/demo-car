@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?p=$1
+RewriteRule ^dong-xe/([a-zA-Z0-9_-]+)$ index.php?p=dong-xe&name=$1
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?p=$1&id=$2
